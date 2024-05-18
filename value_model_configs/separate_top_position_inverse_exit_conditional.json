@@ -7,7 +7,7 @@
         "!top_pos": {
             "_comment": "This approach ranks your candidates by approximately the pointwise reward / Prob(skip)",
             "p_watch_video": "p_inv_skip"    
-        },
+        }
     },
     "ranking_features": {
         "_comment_exit": " This represents the probability that the user exits at this point and does not see any more recommended content.",

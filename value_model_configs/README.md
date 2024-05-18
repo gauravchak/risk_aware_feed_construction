@@ -1,5 +1,8 @@
-This contains a set of configurations to rank candidates when building a
-recommended feed. For illustrative purposes we have chosen a video recommendation system.
+As described in [Multi-Task Fusion](https://arxiv.org/abs/2208.04560) paper many industrial recommender systems are designed by the ranking system emitting a set of estimates and then there is a layer that uses these estimates to compute a composite value and then sorting by this final value to rank the feed. 
+
+This directory contains a set of multi-task fusion configurations to rank candidates that show how to move from a reward maximizing framework to a reward/risk maximizing framework as shown in [this blog](https://recsysml.substack.com/p/how-to-account-for-risk-in-recommended).
+
+For illustrative purposes we have chosen a video recommendation system.
 The approach here should work for otehr domains where the user action labels of 
 consumption, skipping and exit are available.
 
