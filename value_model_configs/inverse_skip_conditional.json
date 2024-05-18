@@ -1,0 +1,10 @@
+{
+    "ranking_value": {
+        "_comment": "This approach ranks your candidates by approximately the pointwise reward / Prob(skip)",
+        "p_watch_video": "p_inv_skip"
+    },
+    "ranking_features": {
+        "_comment": " This represents 1/skip but floors the probability at a small enough value. This makes sure that your ranking is not overly affected by inacciracies in your model. In an inverse skip approach, extremely low values can have a high effect on the final ranking.",
+        "p_inv_skip": "1/Max(0.1, p_skip)"
+    }
+}

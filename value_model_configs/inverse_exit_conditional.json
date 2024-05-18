@@ -1,0 +1,10 @@
+{
+    "ranking_value": {
+        "_comment": "This approach ranks your candidates by approximately the pointwise reward / Prob(exit)",
+        "p_watch_video": "p_inv_exit"
+    },
+    "ranking_features": {
+        "_comment": " This represents the probability that the user exits at this point and does not see any more recommended content.",
+        "p_inv_exit": "1/Max(0.1, p_exit)"
+    }
+}

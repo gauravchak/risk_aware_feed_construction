@@ -1,0 +1,6 @@
+{
+    "ranking_value": {
+        "_comment": "This approach ranks your candidates by the pointwise reward. This means that for each video the score to rank = P(watch_video) * 1 where P(watch_video) is a prediction made by your estimator (a.k.a. MTML ranking) model.",
+        "p_watch_video": "1"
+    }
+}

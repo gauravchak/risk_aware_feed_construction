@@ -1,0 +1,9 @@
+{
+    "ranking_value": {
+        "_comment": "This approach ranks your candidates by the pointwise reward * probability of not skipping",
+        "p_watch_video": "p_nonskip"
+    },
+    "ranking_features": {
+        "p_nonskip": "1 - p_skip"
+    }
+}

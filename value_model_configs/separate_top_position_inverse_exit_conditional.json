@@ -1,0 +1,20 @@
+{
+    "ranking_value": {
+        "top_pos": {
+            "_comment": "This approach ranks your candidates by approximately the pointwise reward / Prob(exit)",
+            "p_watch_video": "p_inv_exit"    
+        },
+        "!top_pos": {
+            "_comment": "This approach ranks your candidates by approximately the pointwise reward / Prob(skip)",
+            "p_watch_video": "p_inv_skip"    
+        },
+    },
+    "ranking_features": {
+        "_comment_exit": " This represents the probability that the user exits at this point and does not see any more recommended content.",
+        "p_inv_exit": "1/Max(0.1, p_exit)",
+        "_comment_skip": " This represents floored 1/skip. This is more conducive to lower points in the feed not the top position.",
+        "p_inv_skip": "1/Max(0.1, p_skip)",
+        "_comment_top_pos": "This feature is true when you are choosing for top position and false for the rest",
+        "top_pos": "is_top_pos_ranking"
+    }
+}
